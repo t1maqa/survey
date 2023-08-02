@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Just stop for a moment to make our service better</p>
+    <fieldset>
+    <form id="survey-form">
+        <label id="name-label">Your Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Your Email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+        <label id="number-label">Your Age: <input id="number" type="number" min="7" max="120" placeholder="Enter your age" /></label>
+
+        <label for="referrer">How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">2GIS</option>
+            <option value="2">Instagram</option>
+            <option value="3">WhatsApp</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+
+        <label> Will you recommend our place to a friend? </label>
+        <label for="of-course"><input id="of-course" value="of-course" name="opros" type="radio" class="inline" />Konecno bratan</label>
+        <label for="maybe"><input id="maybe" value="maybe" name="opros" type="radio" class="inline" />Podumayu</label>
+        <label for="no"><input id="no" value="no" name="opros" type="radio" class="inline" />Bez obid, net... </label>
+        <label id="features-improvement"> What would you like to improve in our restaurant?
+          <label id="features-improvement" ><input id="features-improvement" type="checkbox" value="checkbox" class="inline" />Variety of food on the menu
+          </label>
+          <label id="features-improvement" ><input id="features-improvement" type="checkbox" value="checkbox" class="inline" />Quality of waiter service 
+          </label>
+          <label id="features-improvement" ><input id="features-improvement" type="checkbox" value="checkbox" class="inline" />Restaurant cleanliness 
+          </label>
+        </label>
+        <label for="bio"> Any comments or suggestions?
+          <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+      <input id="submit" type="submit" type="submit" value="Submit" />
+    </form>
+    </fieldset>
+  </body>
+</html>
